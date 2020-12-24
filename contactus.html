@@ -1,5 +1,6 @@
 <html>
 	<head>
+	<link rel = "icon" type = "image/png" href = "C:\Users\sanket\Downloads\1588519022052.png">
 	<title>	Contact Us	</title>
 		<body>
 		<div style= "background-image:linear-gradient(black,red,orange,white)";>
@@ -15,37 +16,59 @@
 		<body style= "background-image:linear-gradient(black,white)";>
 			<h1 align="center">
 			<h1 style="color:white";>
-			
+			<center>
 				FORM 
 			
 			</h1></h1>
 			<center>
-			<table style="border:5px solid black";>
+			<table style="border:5px solid black" width="40%" height="auto";>
 			<tr>
 			<td style="background-image:linear-gradient(pink,white)";>
 			
 			
-		<form action="mailto:sanketugale2003@gmail.com">
-		<label for="fname">First name:</label><br>
-		<input type="text" id="fname" name="fname"><br>
-		<label for="lname">Last name:</label><br>
-		<input type="text" id="lname" name="lname"><br>
-		<label for="email">Email:</label><br>
-		<input type="email" id="email" name="email"><br>
-		<label for="phone">Phone number:</label><br>
-		<input type="number" id="phone" name="phone"><br>
-		<label for="gender">Gender :</label><br>
-		<input type="radio" id="gender" name="gender" value="male">
-		<label for="Male"> Male </label>
-		<input type="radio" id="gender" name="gender" value="female">
-		<label for="Female"> Female </label>
-		<input type="radio" id="gender" name="gender" value="Other">
-		<label for="Other"> other </label><br><br>
-		<center>
-		<input type="submit" value="Submit","fname","lname","email","phone","gender">
-		</form></tr></td></class>
-		</center>
-		</body>
-		</body>
+			
+			
+		<script
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous"></script>
+	<script>
+		function SubForm (){
+			$.ajax({
+				url:"https://api.apispreadsheets.com/data/5557/",
+				type:"post",
+				data:$("#myForm").serializeArray(),
+				success: function(){
+					alert("Form Data Submitted :)")
+				},
+				error: function(){
+					alert("There was an error :(")
+				}
+			});
+		}
+	</script>
+</head>
+<body align="center">
+	<form id="myForm">
+		<label><b>First name</label><br>
+		<input name="First name" />
+		<br/>
+		<label>Last name</label><br>
+		<input name="Last name" />
+		<br/>
+		<label>Email</label><br>
+		<input name="Email" />
+		<br/>
+		<label>Phone number</label><br>
+		<input name="Phone number" />
+		<br/>
+		<label>Gender</label><br>
+		<input name="Gender" />
+		<br/>
+	</form><center>
+	<button onclick='SubForm()'>Submit</button><br><br></b>
+	</tr></td>
+</body></center>
+</table>
 	</head>
 </html>
