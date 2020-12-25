@@ -21,15 +21,14 @@
 			
 			</h1></h1>
 			<center>
-			<table style="border:5px solid black" width="40%" height="auto";>
+			<table style="border:0px" width="40%" height="auto";>
 			<tr>
-			<td style="background-image:linear-gradient(pink,white)";>
+			<td>
 			
 			
 			
 			
-		<script
-		src="https://code.jquery.com/jquery-3.4.1.js"
+		<script src="https://code.jquery.com/jquery-3.4.1.js"
 		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
 		crossorigin="anonymous"></script>
 	<script>
@@ -39,16 +38,17 @@
 				type:"post",
 				data:$("#myForm").serializeArray(),
 				success: function(){
-					alert("Form Data Submitted :)")
+					alert("Form Data Submitted 👍")
 				},
 				error: function(){
-					alert("There was an error :(")
+					alert("There was an error ☹️")
 				}
 			});
 		}
 	</script>
 </head>
 <body align="center">
+<class>
 	<form id="myForm">
 		<label><b>First name</label><br>
 		<input name="First name" />
@@ -70,5 +70,6 @@
 	</tr></td>
 </body></center>
 </table>
+</class>
 	</head>
 </html>
