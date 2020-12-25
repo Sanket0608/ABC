@@ -11,4 +11,46 @@ span{
   margin: 4px 2px;
   cursor: pointer;
 }
+input[name], select, textarea {
+ 
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 5px solid black; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+class{
+	box-align:center-right ;
+    background-color: #fff ;
+    box-shadow: 5px 5px 30px #555 ;
+    display: inline-block ;
+    position: center ;
+    height: auto ;
+    max-width: 1000px ;
+    min-height: 100px ;
+    vertical-align: center ;
+    width: 60% ;
+    position: relative ;
+    top:10% ;
+    border-radius: 8px ;
+    padding: 40px ;
+    text-align:left ;
+    overflow:hidden ;
+    cursor:auto ;
+}
 
+button {
+  background-image: linear-gradient(black,gray);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
